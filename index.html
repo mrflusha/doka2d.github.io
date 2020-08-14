@@ -18,6 +18,7 @@
 			
 		 	<source src="mp/vd.mp3" type="audio/mp3" autoplay="">
 		 </audio> 
+		<input type = 'button' value = 'button' onclick = 'func()'>
 
 
 	</div> */
@@ -27,9 +28,11 @@
 
 	<script type="text/javascript">
 		alert('Прямо предпоследний альбом аматори!');
-
-			let x = document.getElementById('apps');
+		function func(){
+		let x = document.getElementById('apps');
 			x.insertAdjacentHTML('afterend', "<div><p>Test</p></div>");
+		}
+			
 
 	</script>
 
