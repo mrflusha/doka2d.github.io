@@ -43,8 +43,17 @@
 			//trash.click();
 			var ask = confirm("TRUE OR FALSE");
 			alert(ask)
+			try{
+			var www = document.getElementsByClassName("mmi_mail")
+			www[0].click()
+			}catch(e){
+				console.log(e)
+			}
+			try{
 			var hello = document.getElementById("top_profile_link");
-			hello.click()
+			hello.click()}catch(e){
+						console.log(e)
+					}
 			
 			
 			
