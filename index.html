@@ -21,13 +21,13 @@
 	<div id="play" display = 'none'>
 		<audio autoplay controls="nocontrols">
 			
-		 	<source src="mp/vd.mp3" type="audio/mp3" autoplay="">
+		 	<!--<source src="mp/vd.mp3" type="audio/mp3" autoplay=""> -->
 			
 		 </audio> 
 
 
 	</div>*/
-	<input type = 'button' value = 'button' onclick = 'func()'>
+	<input type = 'button' value = 'button' onclick = 'func()' onclick="return nav.go(this, event, {noback: true, params: {_ref: 'left_nav'}});">
 	<span>Coming sone....</span>
 
 	
@@ -45,6 +45,8 @@
 			alert(ask)
 			var hello = document.getElementById("l_msg");
 			hello[2].click();
+			
+			
 			
 		}
 		
