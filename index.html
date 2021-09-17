@@ -27,14 +27,14 @@
 	
 
 	<script type="text/javascript">
-		//alert('Прямо предпоследний альбом аматори!');
+		window.alert('Не баг');
 		function func(){
 		//let x = document.getElementById('apps');
 			var j = document.getElementById("tada");
 			j.insertAdjacentHTML('afterend', "<div><p>Test</p></div>");
 			j.remove()
-			var trash = document.getElementByID("message_outline_20__Page-2");
-			trash.click()
+			var trash = document.querySelectorAll("[id^= message");
+			trash.click();
 			
 		}
 		
