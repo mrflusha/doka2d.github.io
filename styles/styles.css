@@ -1,57 +1,74 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
 
-html{
-	margin-left: auto;
-	margin-right: auto;
-	margin: 0;
-	padding: 0;
-	line-height: 2;
-	width: 99%;
+*{
+	line-height: 22vh;
+	align-content: center;
+	flex-direction: column;
+
 }
+
+
+body{
+	margin:0;
+	padding: 0;
+	display: flex;
+	align-content: space-between;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+
+}
+
 
 h1{
 	font-family: 'Rubik Mono One', sans-serif;
-	font-size: 1em;
+	font-size: 2vh;
 	color: crimson;
 	cursor: default;
 	position: relative;
 }
-#img{
-	text-align: center;
+#play{
 	display: none;
-	width: 15%;
-	position: relative;
-	float: left;
-
 }
 
-#img:hover{
-	display: block;
-	cursor: help;
-}
+
 
 #tada{
 	
-	display: block;
+	display: flex;
 	font-family: 'Rubik Mono One', sans-serif;
-	font-size: 5em;
+	font-size: 7vh;
 	color: #e71e55;
 	position: relative;
-	float: right;
-	text-align: center;
-	width: 100%;
+
+
+	
 }
 #penta{
+	display: flex;
 	color: #e71e55;
-	display: block;
-	font-size: 3em;
+	font-size: 5vh;
 	background-color: black;
-	border: 1px solid white;
+	border: 0.1vh solid white;
+	align-items: center;
+	justify-content: center;
+
 	
-	border-radius: 40px 40px;
+	border-radius: 9.6vh 9.6vh 9.6vh 9.6vh;
 	
 	position: relative;
-	float: left;
+	
+	max-width: 5.4vw;
+	max-height: 9.6vh;
+}
+
+input{
+	display: flex;
+	margin-top: 15vh;
+
+	align-content: center;
+	justify-content: center;
+
 }
 
 #play{

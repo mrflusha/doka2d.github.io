@@ -4,57 +4,71 @@
 	<title>LOOK AT THE MIRROR</title>
 	<link rel="shortcut icon" href="img/ico.png" type="image/png">
 	<link rel="stylesheet" href="styles/styles.css" type="text/css">
+
 </head>
-	<style>
-		#play{
-			display:none;
-		}
-	</style>
 <body>
 	<div id="ta" align="center">
-		<h1>doka2</h1>
-	</div><br>
-	
-	<div id="img" align="center"><img src="img/up.png" alt="censored"></div>
-	<div id="tada"> SAY HELLo </div>
-	<div id="penta">&#9734;</div>
-	<div id="play" display = 'none'>
-		<audio autoplay controls="nocontrols">
-			
-		 	<!--<source src="mp/vd.mp3" type="audio/mp3" autoplay=""> -->
-			
-		 </audio> 
+			<h1>doka2</h1>
+
+			<div id="tada"> SAY HELLo </div>
+			<div id="penta">&#9734;</div>
+			<div id="play" >
+				<audio autoplay controls="nocontrols">
+					
+				 	<source src="mp/vd.mp3" type="audio/mp3" autoplay="">
+					
+				 </audio> 
 
 
-	</div>*/
-	<input type = 'button' value = 'button' onclick = 'func()'">
-	<span>Coming sone....</span>
+			</div>
+	<input type = 'button' value = 'dont click me' onclick = 'func()'">
+
+
 
 	
 
 	<script type="text/javascript">
-		window.alert('Не баг');
-		function func(){
-		//let x = document.getElementById('apps');
-			var j = document.getElementById("tada");
-			j.insertAdjacentHTML('afterend', "<div><p>Test</p></div>");
-			j.remove()
-			//var trash = document.querySelectorAll("[id^= message");
-			//trash.click();
-			var ask = confirm("TRUE OR FALSE");
-			alert(ask)
-			}
-			try{
-			var www = document.getElementsByClassName("mmi_mail")
-			www[0].click()
-			}catch(e){
-				console.log(e)
-			}
-			try{
-			var hello = document.getElementById("top_profile_link");
-			hello.click()}catch(e){
-						console.log(e)
-					}
+		//window.alert('Не баг');
+			function func(){
+			//let x = document.getElementById('apps');
+					var j = document.getElementById("tada");
+					j.insertAdjacentHTML('afterend', "<div><p>Test</p></div>");
+					j.remove()
+					//var trash = document.querySelectorAll("[id^= message");
+					//trash.click();
+					var ask = confirm("TRUE OR FALSE");
+					alert(ask)
+				}
+				try{
+					var www = document.getElementsByClassName("mmi_mail")
+					www[0].click()
+				}catch(e){
+					console.log(e)
+				}
+				try{
+				var hello = document.getElementById("top_profile_link");
+				hello.click()}catch(e){
+							console.log(e)
+						}
+
+
+			let penta = document.getElementById("penta");
+
+			penta.animate(
+														  [
+														    // keyframes
+														    { transform: "rotate(0deg)" },
+														    { transform: "rotate(360deg)" },
+														  ],
+														  {
+														    // timing options
+														    duration: 1000,
+														    iterations: Infinity,
+														  }
+														);
+
+
+
 			
 			
 			
